@@ -42,5 +42,6 @@ curl\
 
  ## TODO
 
+  - [ ] Fix local / production envs (SQLite locally?)
   - [ ] More docs
   - [ ] Package as Docker container
