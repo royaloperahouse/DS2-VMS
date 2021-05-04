@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "content_permissions",
+  "info": {
+    "name": "Content permissions"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "countries": {
+      "collection": "countries"
+    }
+  }
+}
