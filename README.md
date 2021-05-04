@@ -13,13 +13,25 @@ yarn develop
 
 Visit http://localhost:1337/admin to create a local admin user.
 
+## Development
+
+TODO
+
 ## Deployment
 
 This app is currently hosted on Heroku, and builds automatically from `main`.
 
 ## API Usage
 
-Retrieve an auth token for write access:
+A list of all published videos:
+
+`https://ds2-vms.herokuapp.com/videos`
+
+Details for a specific video:
+
+`https://ds2-vms.herokuapp.com/videos/1`
+
+For write access, you first need to retrieve an auth token:
 
 ```bash
 curl\
@@ -42,6 +54,6 @@ curl\
 
  ## TODO
 
-  - [ ] Fix local / production envs (SQLite locally?)
+  - [x] Fix local / production envs (SQLite locally?)
   - [ ] More docs
   - [ ] Package as Docker container
