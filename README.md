@@ -17,15 +17,15 @@ Visit http://localhost:1337/admin to create a local admin user.
 
 ## Development
 
-Either create or update content types using the [Content types builder UI](http://localhost:1337/admin/plugins/content-type-builder/content-types/application::content-permissions.content-permissions) or edit models in `/api/<content-type>/models/<content-type>.settings.json`
+Either create or update content types using the [Content types builder UI](http://localhost:1337/admin/plugins/content-type-builder/content-types/application::content-permissions.content-permissions) or edit models in `/api/<content-type>/models/<content-type>.settings.json`.
 
-Create a new branch for your changes, and submit them as a PR.
+Create a new branch for your changes, and submit it as a PR.
 
 ## Deployment
 
 This app is currently hosted on Heroku, and builds automatically from `main`.
 
-The app expects two environment variables:
+In production, the app expects two environment variables:
 
  - `DATABASE_URL`: a URL to a Postgres database, e.g. postgres://username:password@host:port/database
  - `NODE_ENV`: 'production'
