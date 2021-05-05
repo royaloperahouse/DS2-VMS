@@ -4,6 +4,8 @@ A proof of concept video CMS, implemented in [Strapi](https://strapi.io).
 
 ## Installation
 
+You'll need [Node LTS and Yarn](https://strapi.io/documentation/developer-docs/latest/setup-deployment-guides/installation/cli.html#step-1-make-sure-requirements-are-met).
+
 ```bash
 git clone git@github.com:royaloperahouse/DS2-VMS.git
 cd DS2-VMS
@@ -15,11 +17,22 @@ Visit http://localhost:1337/admin to create a local admin user.
 
 ## Development
 
-TODO
+Either create or update content types using the [Content types builder UI](http://localhost:1337/admin/plugins/content-type-builder/content-types/application::content-permissions.content-permissions) or edit models in `/api/<content-type>/models/<content-type>.settings.json`
+
+Create a new branch for your changes, and submit them as a PR.
 
 ## Deployment
 
 This app is currently hosted on Heroku, and builds automatically from `main`.
+
+The app expects two environment variables:
+
+ - `DATABASE_URL`: a URL to a Postgres database, e.g. postgres://username:password@host:port/database
+ - `NODE_ENV`: 'production'
+
+and additionally, on Heroku:
+
+ - `HEROKU_URL`: the URL for the app on Heroku, without trailing slash, e.g. `https://ds2-vms.herokuapp.com`
 
 ## API Usage
 
@@ -55,5 +68,5 @@ curl\
  ## TODO
 
   - [x] Fix local / production envs (SQLite locally?)
-  - [ ] More docs
+  - [x] More docs
   - [ ] Package as Docker container
