@@ -21,6 +21,8 @@ Either create or update content types using the [Content types builder UI](http:
 
 Create a new branch for your changes, and submit it as a PR.
 
+If you forget your local password, run `strapi admin:reset-user-password`.
+
 ## Deployment
 
 This app is currently hosted on Heroku, and builds automatically from `main`.
