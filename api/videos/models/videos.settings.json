@@ -12,25 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "diese_activity_id": {
-      "type": "integer",
-      "required": true
-    },
-    "type": {
+    "performance": {
       "via": "videos",
-      "model": "video-types"
+      "model": "performances"
     },
-    "title": {
-      "type": "string"
-    },
-    "featuring": {
-      "type": "string"
-    },
-    "annotation": {
-      "type": "text"
-    },
-    "duration": {
-      "type": "integer"
+    "video_type": {
+      "type": "string",
+      "required": true
     },
     "source_url": {
       "type": "string"
@@ -38,16 +26,17 @@
     "manifest_url": {
       "type": "string"
     },
+    "duration": {
+      "type": "integer"
+    },
     "resolution": {
-      "via": "videos",
-      "model": "video-resolutions"
+      "type": "string",
+      "required": true
     },
     "subtitle_locales": {
-      "via": "videos",
-      "collection": "locales",
-      "dominant": true
+      "type": "string"
     },
-    "is_archived": {
+    "archived": {
       "type": "boolean"
     }
   }

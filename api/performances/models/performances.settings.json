@@ -20,8 +20,12 @@
     "diese_title": {
       "type": "string"
     },
-    "is_archived": {
+    "archived": {
       "type": "boolean"
+    },
+    "videos": {
+      "via": "performance",
+      "collection": "videos"
     }
   }
 }
