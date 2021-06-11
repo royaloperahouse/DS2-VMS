@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "videos",
   "info": {
-    "name": "videos",
+    "name": "Videos",
     "description": ""
   },
   "options": {
@@ -12,27 +12,43 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
-    "duration": {
+    "diese_activity_id": {
       "type": "integer",
       "required": true
     },
-    "content_permissions": {
-      "model": "content-permissions"
+    "type": {
+      "via": "videos",
+      "model": "video-types"
     },
-    "diese_id": {
-      "type": "string",
-      "required": true,
-      "unique": true,
-      "minLength": 2
+    "title": {
+      "type": "string"
+    },
+    "featuring": {
+      "type": "string"
+    },
+    "annotation": {
+      "type": "text"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "source_url": {
+      "type": "string"
     },
     "manifest_url": {
-      "type": "string",
-      "required": true,
-      "regex": "https:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)"
+      "type": "string"
+    },
+    "resolution": {
+      "via": "videos",
+      "model": "video-resolutions"
+    },
+    "subtitle_locales": {
+      "via": "videos",
+      "collection": "locales",
+      "dominant": true
+    },
+    "is_archived": {
+      "type": "boolean"
     }
   }
 }

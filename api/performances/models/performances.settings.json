@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "performances",
+  "info": {
+    "name": "Performances",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "diese_activity_id": {
+      "unique": true,
+      "required": true,
+      "type": "integer"
+    },
+    "diese_title": {
+      "type": "string"
+    },
+    "is_archived": {
+      "type": "boolean"
+    }
+  }
+}
