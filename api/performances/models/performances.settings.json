@@ -17,11 +17,13 @@
       "required": true,
       "type": "integer"
     },
-    "diese_title": {
+    "diese_activity_title": {
       "type": "string"
     },
     "archived": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false,
+      "private": true
     },
     "videos": {
       "via": "performance",

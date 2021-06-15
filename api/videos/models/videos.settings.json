@@ -16,6 +16,10 @@
       "via": "videos",
       "model": "performances"
     },
+    "diese_activity_id": {
+      "type": "biginteger",
+      "required": true
+    },
     "video_type": {
       "type": "string",
       "required": true
@@ -29,15 +33,17 @@
     "duration": {
       "type": "integer"
     },
-    "resolution": {
+    "resolutions": {
       "type": "string",
       "required": true
     },
-    "subtitle_locales": {
+    "subtitles": {
       "type": "string"
     },
     "archived": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false,
+      "private": true
     }
   }
 }
