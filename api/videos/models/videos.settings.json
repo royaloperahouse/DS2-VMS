@@ -24,14 +24,14 @@
       "type": "string",
       "required": true
     },
-    "source_url": {
-      "type": "string"
-    },
-    "manifest_url": {
-      "type": "string"
+    "manifest_urls": {
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "duration": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "resolutions": {
       "type": "string",
