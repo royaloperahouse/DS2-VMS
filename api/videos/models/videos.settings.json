@@ -17,7 +17,7 @@
       "model": "performances"
     },
     "diese_activity_id": {
-      "type": "biginteger",
+      "type": "integer",
       "required": true
     },
     "video_type": {
