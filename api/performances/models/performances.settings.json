@@ -23,7 +23,7 @@
     "archived": {
       "type": "boolean",
       "default": false,
-      "private": true
+      "private": false
     },
     "videos": {
       "via": "performance",
