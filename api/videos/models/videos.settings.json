@@ -20,6 +20,16 @@
       "type": "integer",
       "required": true
     },
+    "bitmovin_encoding_id": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "video_key": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
     "video_type": {
       "type": "string",
       "required": true
@@ -33,12 +43,9 @@
       "type": "integer",
       "required": true
     },
-    "resolutions": {
+    "resolution": {
       "type": "string",
       "required": true
-    },
-    "subtitles": {
-      "type": "string"
     },
     "archived": {
       "type": "boolean",
