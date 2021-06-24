@@ -34,7 +34,12 @@
       "type": "string",
       "required": true
     },
-    "manifest_urls": {
+    "hls_manifest_url": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "dash_manifest_url": {
       "type": "string",
       "required": true,
       "unique": true
